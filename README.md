@@ -1,11 +1,5 @@
 # AbstractGPs
 
-[![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://JuliaGaussianProcesses.github.io/AbstractGPs.jl/stable)
-[![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://JuliaGaussianProcesses.github.io/AbstractGPs.jl/dev)
-[![Build Status](https://travis-ci.com/JuliaGaussianProcesses/AbstractGPs.jl.svg?branch=master)](https://travis-ci.com/JuliaGaussianProcesses/AbstractGPs.jl)
-[![Codecov](https://codecov.io/gh/JuliaGaussianProcesses/AbstractGPs.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/JuliaGaussianProcesses/AbstractGPs.jl)
-[![Code Style: Blue](https://img.shields.io/badge/code%20style-blue-4495d1.svg)](https://github.com/invenia/BlueStyle)
-[![ColPrac: Contributor's Guide on Collaborative Practices for Community Packages](https://img.shields.io/badge/ColPrac-Contributor's%20Guide-blueviolet)](https://github.com/SciML/ColPrac)
 
 AbstractGPs.jl is a package that defines a low-level API for working with Gaussian processes (GPs), and basic functionality for working with them in the simplest cases. As such it is aimed more at developers and researchers who are interested in using it as a building block than end-users of GPs.
 
@@ -110,7 +104,3 @@ u_p_fx = update_approx_posterior(p_fx1, f(x[8:10], 0.1), y[8:10])
 p_fx1 = approx_posterior(VFE(), f(X, 0.1), y, f(Z1))
 u_p_fx1 = update_approx_posterior(p_fx1, f(Z2))
 ```
-
-## Issues/Contributing
-
-If you notice a problem or would like to contribute by adding more kernel functions or features please [submit an issue](https://github.com/JuliaGaussianProcesses/AbstractGPs.jl/issues).
